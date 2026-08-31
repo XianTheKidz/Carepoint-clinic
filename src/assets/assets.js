@@ -111,6 +111,7 @@ export const doctors = [
         experience: '7 Years',
         about: 'Known for his analytical approach and attention to detail, Dr. Andrew Cooper helps patients manage complex neurological conditions through personalized treatment plans and continuous support.',
         fees: 65,
+        available: true,
         phone: "+44 20 7946 1845",
         email: "andrew.cooper@carepointclinic.com",
         address: {
@@ -127,6 +128,7 @@ export const doctors = [
         experience: '5 Years',
         about: "Dr. Emily Carter is dedicated to providing comprehensive women's healthcare in a respectful and comfortable environment. She specializes in reproductive health, prenatal care, and preventive gynecological services.",
         fees: 60,
+        available: true,
         phone: "+44 20 7834 5621",
         email: "emily.carter@carepointclinic.com",
         address: {
@@ -143,6 +145,7 @@ export const doctors = [
         experience: '4 Years',
         about: "Dr. Maria Santos enjoys helping children grow up healthy and happy. She works closely with families to provide compassionate pediatric care tailored to every child's needs.",
         fees: 58,
+        available: true,
         phone: "+44 20 7482 1937",
         email: "maria.santos@carepointclinic.com",
         address: {
@@ -159,6 +162,7 @@ export const doctors = [
         experience: '15 Years',
         about: "With over fifteen years of experience, Dr. Michael Johnson specializes in diagnosing and managing chronic diseases. His patient-first philosophy has earned the trust of countless families.",
         fees: 40,
+        available: true,
         phone: "+44 20 7628 4519",
         email: "michael.johnson@carepointclinic.com",
         address: {
@@ -175,6 +179,7 @@ export const doctors = [
         experience: '12 Years',
         about: "Dr. Ethan Carter has dedicated his career to family medicine, providing personalized healthcare for patients of all ages. He believes that preventive care and healthy lifestyle choices are the key to long-term wellness.",
         fees: 55,
+        available: true,
         phone: "+44 20 7359 8126",
         email: "ethan.carter@carepointclinic.com",
         address: {
@@ -191,6 +196,7 @@ export const doctors = [
         experience: '12 Years',
         about: "Dr. Tan Jun Hao is passionate about child healthcare and preventive medicine. He believes every child deserves compassionate, family-centered care.",
         fees: 70,
+        available: true,
         phone: "+44 20 7781 2645",
         email: "tan.jun.hao@carepointclinic.com",
         address: {
@@ -207,6 +213,7 @@ export const doctors = [
         experience: '9 Years',
         about: "Dr. Nguyen Minh Khoa specializes in digestive diseases and preventive gastrointestinal care. He values clear communication and personalized treatment plans.",
         fees: 65,
+        available: true,
         phone: "+44 20 7465 9371",
         email: "nguyen.minh.khoa@carepointclinic.com",
         address: {
@@ -223,6 +230,7 @@ export const doctors = [
         experience: '8 Years',
         about: "Dr. Sophia Turner believes in empowering women through education and preventive healthcare. She is dedicated to delivering personalized treatment with compassion.",
         fees: 60,
+        available: true,
         phone: "+44 20 7548 6823",
         email: "sophia.turner@carepointclinic.com",
         address:{
@@ -239,6 +247,7 @@ export const doctors = [
         experience: '16 Years',
         about: "Dr. Zhang Wei is highly experienced in treating disorders of the nervous system. He combines advanced medical techniques with compassionate patient care.",
         fees: 90,
+        available: true,
         phone: "+44 20 7896 1457",
         email: "zhang.wei@carepointclinic.com",
         address:{
@@ -255,6 +264,7 @@ export const doctors = [
         experience: '7 Years',
         about: "Dr. Kevin Thompson provides modern dermatological care using evidence-based treatments. He enjoys helping patients restore confidence in their skin.",
         fees: 40,
+        available: true,
         phone: "+44 20 7692 5384",
         email: "kevin.thompson@carepointclinic.com",
         address:{
@@ -271,6 +281,7 @@ export const doctors = [
         experience: '13 Years',
         about:"Dr. Brian Anderson focuses on digestive health and preventive gastrointestinal care. He is dedicated to helping patients achieve lasting wellness.",
         fees: 75,
+        available: true,
         phone: "+44 20 7817 4926",
         email: "brian.anderson@carepointclinic.com",
         address:{
@@ -287,6 +298,7 @@ export const doctors = [
         experience: '11 Years',
         about: "Dr. Chinedu Okafor is committed to helping patients achieve healthier skin through personalized dermatological care. He focuses on both treatment and prevention.",
         fees: 72,
+        available: true,
         phone: "+44 20 7583 1749",
         email: "chinedu.okafor@carepointclinic.com",
         address:{
@@ -303,6 +315,7 @@ export const doctors = [
         experience: '13 Years',
         about: "Dr. Arjun Mehta is an experienced cardiologist dedicated to preventing and treating heart diseases through modern medical practices. He is passionate about helping patients maintain a healthy heart by combining advanced diagnostics, personalized treatment plans, and lifestyle guidance.",
         fees: 65,
+        available: true,
         phone: "+44 20 7746 8513",
         email: "arjun.mehta@carepointclinic.com",
         address: {
@@ -319,6 +332,7 @@ export const doctors = [
         experience: '11 Years',
         about: "Dr. Yuki Nakamura specializes in diagnosing and treating neurological disorders with a patient-centered approach. She is committed to providing compassionate care while using the latest medical advancements to improve patients' quality of life.",
         fees: 78,
+        available: true,
         phone: "+44 20 7391 6258",
         email: "yuki.nakamura@carepointclinic.com",
         address: {
@@ -335,6 +349,7 @@ export const doctors = [
         experience: '9 Years',
         about: "Dr. Adaeze Okonkwo specializes in treating a wide range of skin conditions while promoting healthy skincare habits. She is known for her patient-centered and compassionate approach.",
         fees: 66,
+        available: true,
         phone: "+44 20 7854 3169",
         email: "adaeze.okonkwo@carepointclinic.com",
         address:{
@@ -351,6 +366,7 @@ export const doctors = [
         experience: '25 Years',
         about: "Dr. Daniel Brooks enjoys helping patients improve their overall health through preventive medicine and early diagnosis. He focuses on building long-term relationships with every patient.",
         fees: 85,
+        available: true,
         phone: "+44 20 7675 9482",
         email: "daniel.brooks@carepointclinic.com",
         address:{
@@ -367,6 +383,7 @@ export const doctors = [
         experience: "9 Years",
         about: "Dr. Jessica Williams is a dedicated cardiologist with a passion for helping patients maintain healthy hearts through early diagnosis, advanced treatment, and preventive care. She believes in building strong relationships with her patients and creating personalized treatment plans that promote long-term cardiovascular health.",
         fees: 65,
+        available: true,
         phone: "+44 20 7438 5216",
         email: "jessica.williams@carepointclinic.com",
         address: {
@@ -383,6 +400,7 @@ export const doctors = [
         experience: '8 Years',
         about: "Dr. Lim Wei Jian enjoys caring for children from infancy through adolescence. His friendly approach helps young patients feel comfortable during every visit.",
         fees: 60,
+        available: true,
         phone: "+44 20 7926 8145",
         email: "lim.weijian@carepointclinic.com",
         address:{
