@@ -200,36 +200,58 @@ const Doctors = () => {
                         {item.about}
                       </p>
 
-                      {/* Book Button */}
+                      {/* Availability + Book Button */}
                       <div className="mt-5 border-t border-sky-100 pt-4">
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
 
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            navigate(`/appointment/${item._id}`);
-                          }}
-                          className="
-                            w-full
-                            rounded-xl
+                          {/* Available Bubble */}
+                          <span className="
+                            flex
+                            w-fit
+                            items-center
+                            gap-2
+                            rounded-full
                             border
-                            border-cyan-300
-                            bg-cyan-50
-                            px-5
-                            py-2.5
-                            text-sm
+                            border-emerald-200
+                            bg-emerald-50
+                            px-3
+                            py-1.5
+                            text-xs
                             font-semibold
-                            text-cyan-700
-                            transition-all
-                            duration-300
-                            hover:bg-cyan-500
-                            hover:text-white
+                            text-emerald-600
+                          ">
+                            <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                            Available for Consultation
+                          </span>
 
-                            sm:w-auto
-                          "
-                        >
-                          Book Now
-                        </button>
+                          {/* Book Button */}
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              navigate(`/appointment/${item._id}`);
+                            }}
+                            className="
+                              w-full
+                              rounded-xl
+                              border
+                              border-cyan-300
+                              bg-cyan-50
+                              px-5
+                              py-2.5
+                              text-sm
+                              font-semibold
+                              text-cyan-700
+                              transition-all
+                              duration-300
+                              hover:bg-cyan-500
+                              hover:text-white
+                              sm:w-auto
+                            "
+                          >
+                            Book Now
+                          </button>
 
+                        </div>
                       </div>
 
                     </div>
