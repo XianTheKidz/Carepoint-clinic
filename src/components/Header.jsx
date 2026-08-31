@@ -105,7 +105,7 @@ const Header = () => {
           "
         >
           <a
-            href="#speciality"
+            href="/contact"
             className="
               w-fit
               rounded-full
