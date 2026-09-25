@@ -68,35 +68,57 @@ const Doctors = () => {
                 🩺 Specialties
               </h2>
 
-              {/* 2 columns on mobile, 1 column on desktop */}
               <div className="grid grid-cols-2 gap-3 lg:grid-cols-1">
+              {[
+                "General physician",
+                "Gynecologist",
+                "Dermatologist",
+                "Pediatrician",
+                "Neurologist",
+                "Gastroenterologist",
+              ].map((spec) => (
+                <button
+                  key={spec}
+                  onClick={() =>
+                    speciality === spec
+                      ? navigate("/doctors")
+                      : navigate(`/doctors/${spec}`)
+                  }
+                  className={`w-full rounded-xl px-3 py-3 text-center text-sm font-medium transition-all duration-300 sm:px-5 lg:rounded-full lg:text-left ${
+                    speciality === spec
+                      ? "bg-linear-to-r from-cyan-500 via-sky-500 to-blue-600 text-white shadow-lg"
+                      : "border border-sky-200 bg-white text-slate-600 hover:border-cyan-300 hover:text-cyan-600"
+                  }`}
+                >
+                  {spec}
+                </button>
+              ))}
 
-                {[
-                  "General physician",
-                  "Gynecologist",
-                  "Dermatologist",
-                  "Pediatrician",
-                  "Neurologist",
-                  "Gastroenterologist",
-                ].map((spec) => (
-                  <button
-                    key={spec}
-                    onClick={() =>
-                      speciality === spec
-                        ? navigate("/doctors")
-                        : navigate(`/doctors/${spec}`)
-                    }
-                    className={`w-full rounded-xl px-3 py-3 text-center text-sm font-medium transition-all duration-300 sm:px-5 lg:rounded-full lg:text-left ${
-                      speciality === spec
-                        ? "bg-linear-to-r from-cyan-500 via-sky-500 to-blue-600 text-white shadow-lg"
-                        : "border border-sky-200 bg-white text-slate-600 hover:border-cyan-300 hover:text-cyan-600"
-                    }`}
-                  >
-                    {spec}
-                  </button>
-                ))}
-
-              </div>
+              {/* Clear Filter */}
+              <button
+                onClick={() => navigate("/doctors")}
+                className="
+                  mt-1
+                  w-full
+                  rounded-xl
+                  border border-slate-200
+                  bg-slate-50
+                  px-3 py-3
+                  text-center
+                  text-sm font-semibold
+                  text-slate-500
+                  transition-all duration-300
+                  hover:border-red-200
+                  hover:bg-red-50
+                  hover:text-red-500
+                  sm:px-5
+                  lg:rounded-full
+                  lg:text-left
+                "
+              >
+                Clear Filter
+              </button>
+            </div>
             </div>
           </div>
 
