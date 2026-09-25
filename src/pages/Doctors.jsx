@@ -96,27 +96,16 @@ const Doctors = () => {
 
               {/* Clear Filter */}
               <button
-                onClick={() => navigate("/doctors")}
-                className="
-                  mt-1
-                  w-full
-                  rounded-xl
-                  border border-slate-200
-                  bg-slate-50
-                  px-3 py-3
-                  text-center
-                  text-sm font-semibold
-                  text-slate-500
-                  transition-all duration-300
-                  hover:border-red-200
-                  hover:bg-red-50
-                  hover:text-red-500
-                  sm:px-5
-                  lg:rounded-full
-                  lg:text-left
-                "
-              >
-                Clear Filter
+              onClick={() => {
+                const scrollY = window.scrollY;
+
+                navigate("/doctors", {
+                  state: { restoreScroll: true, scrollY },
+                });
+              }}
+              className="mt-1 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-center text-sm font-semibold text-slate-500 transition-all duration-300 hover:border-red-200 hover:bg-red-50 hover:text-red-500 sm:px-5 lg:rounded-full lg:text-left"
+            >
+              Clear Filter
               </button>
             </div>
             </div>
